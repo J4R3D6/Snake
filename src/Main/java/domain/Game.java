@@ -6,7 +6,7 @@ package domain;
  * It interacts with a GameBoard instance to update the game state and
  * handle player inputs such as changing directions.
  */
-public class Game {
+public class Game{
 	private boolean gameOver;
 	private int score;
 	private GameBoard gameBoard;
@@ -19,7 +19,7 @@ public class Game {
 	 * creates a new game board with predefined dimensions. The starting direction
 	 * of the player-controlled entity (e.g., snake) is set to move right.
 	 */
-	public Game() {
+	public Game(){
 		this.gameOver = false;
 		this.score = 0;
 		this.gameBoard = new Board(20, 20);
@@ -97,4 +97,7 @@ public class Game {
 	public GameBoard getGameBoard() {
 		return gameBoard;
 	}
+
+
+
 }
